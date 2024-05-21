@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const listOfChallenges = ["/challenge1"];
+  const listOfChallenges = ["/challenge1", "/challenge2"];
 
   return (
     <div className="mt-10 ml-10">
@@ -17,10 +17,11 @@ export default function Home() {
             <Link key={index} href={challenge} className="flex">
               <div>
                 <Image
-                  src="/ch1-main.png"
+                  src={`/ch${index + 1}-main.png`}
                   width={200}
                   height={140}
                   alt={`Challenge ${index}`}
+                  className="h-[140px] w-[200px]"
                 />
                 <p className="p-2">Challenge {index + 1}</p>
               </div>
