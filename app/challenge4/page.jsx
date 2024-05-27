@@ -53,7 +53,7 @@ const Challenge4 = () => {
             </p>
           </div>
           <Image
-            src="/preview.png"
+            src="/Preview.png"
             width={592}
             height={592}
             className=" w-[592] h-[592]"
