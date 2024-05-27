@@ -2,7 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const listOfChallenges = ["/challenge1", "/challenge2", "/challenge3"];
+  const listOfChallenges = [
+    "/challenge1",
+    "/challenge2",
+    "/challenge3",
+    "/challenge4",
+  ];
 
   return (
     <div className="mt-10 ml-10">
