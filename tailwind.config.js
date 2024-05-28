@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
+        PaytoneOne: ["Paytone One", "sans-serif"],
       },
     },
   },

@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import React, { useState } from "react";
 
 const Challenge4 = () => {
   return (
     <div className="bg-black h-[100vh] relative">
-      <div className="font-Poppins mx-auto px-32 text-white py-11">
+      <div className="font-Poppins mx-auto px-32 text-white py-11 relative">
         {/* Header */}
         <div className="flex justify-between items-center">
           <h1 className="text-[24px] font-[700]">Namık Korona</h1>
@@ -29,7 +30,7 @@ const Challenge4 = () => {
         </div>
 
         {/* main content */}
-        <main className="flex my-40 items-center justify-between ">
+        <main className="flex my-40 items-center justify-between relative z-10">
           <div>
             <h2 className="font-[500] text-[28px]">Hi, I'm Namık,</h2>
             <p className="text-[96px] font-[700] leading-[110px]">I'M A</p>
@@ -44,13 +45,16 @@ const Challenge4 = () => {
               <li className="font-[400px] text-[24px] text-[#F8F7F9] opacity-50">
                 Responsive Design:
               </li>
-              <li className="font-[400px] text-[24px] text-[#F8F7F9] opacity-50">
+              <li className="font-[400px] text-[24px] text-[#F8F7F9] opacity-50 mb-10">
                 Collaborative Design Workflows:
               </li>
             </ul>
-            <p className="text-[26px] font-[800] border-b-4 w-[235px] mt-10">
-              View My Projects
-            </p>
+
+            <Link href="/challenge4/projects">
+              <p className="text-[26px] font-[800] border-b-4 w-[235px]">
+                View My Projects
+              </p>
+            </Link>
           </div>
           <Image
             src="/Preview.png"
