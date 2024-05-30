@@ -1,10 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import CH5Button from "../components/CH5Button";
+import CH5Socialicons from "../components/CH5Socialicons";
+import CH5ButtonMobile from "../components/CH5ButtonMobile";
+import CH5AboutMe from "../components/CH5AboutMe";
+import CH5Services from "../components/CH5Services";
+import CH5ContactMe from "../components/CH5ContactMe";
+import CH5Footer from "../components/CH5Footer";
 
 const page = () => {
   return (
-    <div>
-      <div className="font-Montserrat bg-[#FFDD55] relative h-[100vh]">
+    <div className=" bg-[#FFDD55] pb-8">
+      <div className="font-Montserrat">
         {/* Header */}
         <div className="bg-black sm:px-16 px-9 py-6 rounded-bl-3xl rounded-br-3xl flex justify-between items-center">
           <Image src="/ch5/logo.png" width={68} height={68} />
@@ -21,6 +28,7 @@ const page = () => {
           </div>
         </div>
 
+        {/* Hero */}
         <div className="flex sm:flex-row flex-col sm:justify-between gap-11 sm:mx-14 mx-[30px]  sm:items-center sm:mt-[76px] mt-[40px]">
           {/* Body */}
           <div>
@@ -44,26 +52,12 @@ const page = () => {
               </div>
             </div>
 
-            <div className=" space-x-4 mt-4 relative sm:flex hidden">
+            <div className="gap-4 mt-10 relative sm:flex hidden">
               {/* Hire me button */}
-              <div className="mr-[200px]">
-                <button className="text-[32px] text-white font-[700] bg-black py-[12px] px-[30px] rounded-2xl z-10 absolute">
-                  Hire me
-                </button>
-                <button className="text-[32px] text-white font-[700] bg-[#00C6AE] py-[12px] px-[30px] rounded-2xl mt-2 ml-2 z-0 absolute">
-                  Hire me
-                </button>
-              </div>
+              <CH5Button text={"Hire me"} />
+              <CH5Button text={"Download CV"} />
 
               {/* Download CV button */}
-              <div>
-                <button className="text-[32px] text-white font-[700] bg-black py-[12px] px-[30px] rounded-2xl text-nowrap z-10 absolute">
-                  Download CV
-                </button>
-                <button className="text-[32px] text-white font-[700] bg-[#00C6AE] py-[12px] px-[30px] text-nowrap rounded-2xl absolute mt-2 ml-2 z-0">
-                  Download CV
-                </button>
-              </div>
             </div>
           </div>
 
@@ -77,55 +71,33 @@ const page = () => {
             />
 
             {/* buttons */}
-            <div className="flex flex-col gap-1">
-              <Image
-                src="/ch5/Component 1.png"
-                height={96}
-                width={96}
-                className="sm:h-[96px] sm:w-[96px]"
-              />
-              <Image
-                src="/ch5/Component 2.png"
-                height={96}
-                width={96}
-                className="sm:h-[96px] sm:w-[96px]"
-              />
-              <Image
-                src="/ch5/Component 3.png"
-                height={96}
-                width={96}
-                className="sm:h-[96px] sm:w-[96px]"
-              />
-              <Image
-                src="/ch5/Component 4.png"
-                height={96}
-                width={96}
-                className="sm:h-[96px] sm:w-[96px]"
-              />
-            </div>
+            <CH5Socialicons />
           </div>
 
-          <div className=" space-x-4 sm:hidden flex mt-[-20px]">
+          <div className="sm:hidden flex gap-5 mt-[-20px]">
             {/* Hire me button */}
-            <div className="mr-[120px] relative text-nowrap">
-              <button className="text-[16px] text-white font-[700] bg-black py-[12px] px-[30px] rounded-2xl z-10 absolute">
-                Hire me
-              </button>
-              <button className="text-[16px] text-white font-[700] bg-[#00C6AE] py-[12px] px-[30px] rounded-2xl mt-1 ml-1 z-0 absolute">
-                Hire me
-              </button>
-            </div>
+            <CH5ButtonMobile text={"Hire me"} />
 
             {/* Download CV button */}
-            <div className=" relative text-nowrap">
-              <button className="text-[16px] text-white font-[700] bg-black py-[12px] px-[30px] rounded-2xl text-nowrap z-10 absolute">
-                Download CV
-              </button>
-              <button className="text-[16px] text-white font-[700] bg-[#00C6AE] py-[12px] px-[30px] text-nowrap rounded-2xl absolute mt-1 ml-1 z-0">
-                Download CV
-              </button>
-            </div>
+            <CH5ButtonMobile text={"Download CV"} />
           </div>
+        </div>
+
+        {/* About Me */}
+        <div className="sm:mx-14 mx-[30px]">
+          <CH5AboutMe />
+        </div>
+
+        {/* Services */}
+        <CH5Services />
+
+        {/* Contact Me */}
+        <div className="sm:my-[180px] my-[100px]">
+          <CH5ContactMe />
+        </div>
+
+        <div className="sm:my-[180px] my-[100px]">
+          <CH5Footer />
         </div>
       </div>
     </div>
