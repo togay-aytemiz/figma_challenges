@@ -8,6 +8,7 @@ export default function Home() {
     "/challenge3",
     "/challenge4",
     "/challenge5",
+    "/challenge6",
   ];
 
   return (

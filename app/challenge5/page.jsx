@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import CH5Button from "../components/CH5Button";
-import CH5Socialicons from "../components/CH5Socialicons";
-import CH5ButtonMobile from "../components/CH5ButtonMobile";
-import CH5AboutMe from "../components/CH5AboutMe";
-import CH5Services from "../components/CH5Services";
-import CH5ContactMe from "../components/CH5ContactMe";
-import CH5Footer from "../components/CH5Footer";
+import CH5Button from "../components/ch5/CH5Button";
+import CH5Socialicons from "../components/ch5/CH5Socialicons";
+import CH5ButtonMobile from "../components/ch5/CH5ButtonMobile";
+import CH5AboutMe from "../components/ch5/CH5AboutMe";
+import CH5Services from "../components/ch5/CH5Services";
+import CH5ContactMe from "../components/ch5/CH5ContactMe";
+import CH5Footer from "../components/ch5/CH5Footer";
 
 const page = () => {
   return (
