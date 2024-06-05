@@ -6,7 +6,9 @@ export default function Layout({ children }) {
       <div className="w-full flex-none md:w-64">
         <SideNav />
       </div>
-      <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+      <div className="flex-grow md:overflow-y-auto p-[15px] bg-[#4A7A4C]">
+        {children}
+      </div>
     </div>
   );
 }
