@@ -40,10 +40,10 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              "flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3  text-white hover:bg-white hover:text-[#4A7A4C] md:flex-none md:justify-start md:p-2 md:px-3 text-[20px] font-[700]",
+              "flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3  text-white hover:bg-white hover:text-[#4A7A4D] md:flex-none md:justify-start md:p-2 md:px-3 text-[20px] font-[700]",
               {
                 // The current page should appear slightly different. Active means something is selected.
-                "bg-white text-[#4A7A4E]": pathName === link.href,
+                "bg-white text-[#4A7A4D]": pathName === link.href,
               }
             )}
           >

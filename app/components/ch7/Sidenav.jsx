@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col px-3 py-4 md:px-2 bg-[#4A7A4C]">
+    <div className="flex h-full flex-col px-3 py-4 md:px-2 bg-[#4A7A4C] pt-20 sm:pt-0">
       <Link
         className="flex h-20 items-end justify-start rounded-mdp-4 md:h-40 sm:mb-20 mb-5 mt-10"
         href="/"

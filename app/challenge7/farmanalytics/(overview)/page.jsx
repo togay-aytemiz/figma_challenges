@@ -1,16 +1,23 @@
+"use client";
+
 import AddCrop from "@/app/components/ch7/FarmAnalytics/AddCrop";
 import Badges from "@/app/components/ch7/FarmAnalytics/Badges";
 import Elements from "@/app/components/ch7/FarmAnalytics/Elements";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const page = () => {
+  const [isAddCropOpen, setIsAddCropOpen] = useState(false);
+
   return (
     <div className="relative">
-      <div className="bg-white rounded-xl p-[25px] w-full h-full ">
+      <div className="bg-white rounded-xl p-[25px] w-full h-full">
         <div className="flex justify-between">
           <h1 className="text-[38px] font-[700] text-[#4A7A4C]">Farm 1</h1>
-          <button className="text-[23px] font-[700] px-[14px] bg-[#4A7A4C] text-white rounded-xl hover:shadow-xl">
+          <button
+            className="text-[23px] font-[700] px-[14px] bg-[#4A7A4C] text-white rounded-xl hover:shadow-xl"
+            onClick={() => setIsAddCropOpen(true)}
+          >
             + Add Crop
           </button>
         </div>
@@ -42,13 +49,19 @@ const page = () => {
             </div>
           </div>
         </div>
+
         <button className="text-[32px] font-[700] text-[#4A7A4C] border-4 border-[#4A7A4C] py-1 w-full rounded-md mt-5">
           Efficiency Rating
         </button>
       </div>
-      <div className="absolute z-10 top-0">
-        <AddCrop className="w-full h-full" />
-      </div>
+      {isAddCropOpen && (
+        <div className="absolute z-10 top-0 w-full h-full">
+          <AddCrop
+            className="w-full h-full"
+            setIsAddCropOpen={setIsAddCropOpen}
+          />
+        </div>
+      )}
     </div>
   );
 };
